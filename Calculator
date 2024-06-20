@@ -1,0 +1,42 @@
+# Импорт библиотеки math
+import math
+# Присваивание переменных калькулятора
+x = int(input("Введите первое значение:\t"))
+y = int(input("Введите второе значение:\t"))
+plus = x + y                # Сложение 
+sub = x - y                 # Вычитание
+mult = x * y                # Умножение
+div = x / y                 # Деление
+degree = x ** y             # Возведение в степень
+s_root_x = math.sqrt(x)     # Корень из числа х
+s_root_y = math.sqrt(y)     # Корень из числа y
+
+# Вывод подсказки для пользователя
+print("Какую математическую операцию Вы хотите сделать?")
+print("plus - сложение;")
+print("sub- вычитание;")
+print("mult- умножение;")
+print("div- деление;")
+print("mult- возведение в степень;")
+print("s_root_x- нахождение корня х;")
+print("s_root_y- нахождение корня y;")
+
+result = input()
+
+# Условие обращение к переменным
+if (result == "plus"):
+    print(plus)
+elif (result == "sub"):
+    print(sub)
+elif (result == "mult"):
+    print(mult)
+elif (result == "div"):   
+    print(div)
+elif (result == "degree"):
+    print(degree)
+elif (result == "s_root_x"):
+    print(s_root_x)
+elif (result == "s_root_y"):
+    print(s_root_y)
+else:
+    print("ОШИБКА")
