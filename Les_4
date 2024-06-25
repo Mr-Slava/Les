@@ -1,0 +1,16 @@
+flag = True
+while flag:
+    print("Введите коордитнаты:")
+    x = float(input("x:"" "))
+    y = float(input("y:"" "))
+    if (x > 0) and (y > 0):
+        print("Ваше число в I четверти")
+    elif (x < 0) and (y > 0):
+        print("Ваше число в II четверти")
+    elif (x < 0) and (y < 0):
+        print("Ваше число в III четверти")
+    elif (x > 0) and (y < 0):
+        print("Ваше число в IV четверти")
+    else:
+        print("Введено неверное значение")    
+flag = False    
